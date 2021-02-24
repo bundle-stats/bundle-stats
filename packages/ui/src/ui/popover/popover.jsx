@@ -13,7 +13,6 @@ import css from './popover.module.css';
 export const Popover = ({ className, content, children }) => {
   const popover = usePopoverState({
     baseId: process.env.NODE_ENV === 'test' && 'id-test',
-    gutter: 24,
     placement: 'top',
   });
 
